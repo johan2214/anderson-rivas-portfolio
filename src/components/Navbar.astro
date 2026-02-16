@@ -1,0 +1,50 @@
+---
+---
+
+<nav class="navbar animate-in fixed top-0 left-0 right-0 z-[1000] bg-black/85 backdrop-blur-md border-b border-card-border">
+    <div class="max-w-[1200px] mx-auto flex justify-between items-center py-[18px] px-8">
+        <div class="logo flex items-center gap-2 font-bold text-xl">
+            <span class="text-acc-green">👨‍💻</span>
+            <span>Anderson Rivas</span>
+        </div>
+        
+        <ul class="nav-links hidden md:flex list-none gap-8">
+            <li><a href="#inicio" class="text-text-gray text-[0.95rem] font-medium hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="#servicios" class="text-text-gray text-[0.95rem] font-medium hover:text-white transition-colors">Servicios</a></li>
+            <li><a href="#portfolio" class="text-text-gray text-[0.95rem] font-medium hover:text-white transition-colors">Portfolio</a></li>
+            <li><a href="#proceso" class="text-text-gray text-[0.95rem] font-medium hover:text-white transition-colors">Proceso</a></li>
+            <li><a href="#contacto" class="text-text-gray text-[0.95rem] font-medium hover:text-white transition-colors">Contacto</a></li>
+        </ul>
+        
+        <div class="nav-actions hidden md:flex items-center gap-6">
+            <a href="https://wa.me/1234567890" class="bg-acc-green text-bg-black px-5 py-2.5 rounded-lg font-semibold text-[0.95rem] hover:opacity-90 transition-opacity" target="_blank">💬 WhatsApp</a>
+        </div>
+        
+        <button class="menu-toggle md:hidden bg-transparent border-none text-white text-2xl cursor-pointer" aria-label="Abrir menú">☰</button>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay fixed inset-0 bg-black/80 backdrop-blur hidden z-[998] opacity-0 transition-opacity"></div>
+
+<div class="mobile-menu fixed top-0 right-[-100%] w-4/5 max-w-[320px] h-screen bg-card-bg border-l border-card-border z-[999] p-6 flex flex-col transition-all duration-300">
+    <div class="flex justify-between items-center mb-10 pb-6 border-b border-card-border">
+        <div class="logo flex items-center gap-2 font-bold text-xl">
+            <span class="text-acc-green">👨‍💻</span>
+            <span>Anderson Rivas</span>
+        </div>
+        <button class="menu-close bg-white/10 border border-card-border text-white text-2xl font-bold w-11 h-11 rounded-lg flex items-center justify-center hover:border-acc-green hover:text-acc-green transition-all" aria-label="Cerrar menú">✕</button>
+    </div>
+    
+    <ul class="mobile-nav-links list-none flex flex-col gap-2 mb-10">
+        <li><a href="#inicio" class="block text-white text-lg font-medium p-4 rounded-xl hover:bg-white/5 hover:text-acc-green transition-all">Inicio</a></li>
+        <li><a href="#servicios" class="block text-white text-lg font-medium p-4 rounded-xl hover:bg-white/5 hover:text-acc-green transition-all">Servicios</a></li>
+        <li><a href="#portfolio" class="block text-white text-lg font-medium p-4 rounded-xl hover:bg-white/5 hover:text-acc-green transition-all">Portfolio</a></li>
+        <li><a href="#proceso" class="block text-white text-lg font-medium p-4 rounded-xl hover:bg-white/5 hover:text-acc-green transition-all">Proceso</a></li>
+        <li><a href="#contacto" class="block text-white text-lg font-medium p-4 rounded-xl hover:bg-white/5 hover:text-acc-green transition-all">Contacto</a></li>
+    </ul>
+    
+    <div class="mt-auto flex flex-col gap-4">
+        <a href="https://wa.me/1234567890" class="bg-acc-green text-bg-black text-center px-6 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity" target="_blank">💬 WhatsApp</a>
+    </div>
+</div>

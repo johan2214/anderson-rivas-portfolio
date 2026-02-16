@@ -1,0 +1,510 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<Layout>
+    <Navbar />
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-40 pb-24 px-6">
+        <div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="text-left">
+                <div class="inline-flex items-center gap-2 bg-acc-green-dim text-acc-green px-4 py-2 rounded-full text-sm font-semibold mb-8 border border-acc-green/20">
+                    <span class="w-2 h-2 bg-acc-green rounded-full shadow-[0_0_10px_#39FF14]"></span>
+                    Disponible para proyectos
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-8">
+                    Anderson Rivas<br>
+                    <span class="text-acc-green drop-shadow-[0_0_20px_rgba(57,255,20,0.3)]">Desarrollador WordPress</span><br>
+                    Experto
+                </h1>
+                
+                <p class="text-text-gray text-xl max-w-2xl mb-12 leading-relaxed">
+                    Ingeniero en Informática con <strong class="text-white">más de 10 años de experiencia</strong> creando soluciones web profesionales. 
+                    Especialista en <strong class="text-white">Elementor</strong>, <strong class="text-white">Bricks Builder</strong>, <strong class="text-white">WooCommerce</strong> y <strong class="text-white">TutorLMS</strong>.
+                    Transformo tus diseños de Figma en sitios web rápidos, seguros y escalables.
+                </p>
+                
+                <div class="flex flex-wrap gap-5 mb-14">
+                    <a href="#portfolio" class="bg-acc-green text-bg-black px-8 py-4 rounded-xl font-bold text-lg shadow-[0_8px_32px_rgba(57,255,20,0.15)] hover:opacity-90 transition-opacity">Ver Portfolio →</a>
+                    <a href="https://wa.me/1234567890" class="bg-transparent text-white border border-card-border px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0f0f0f] hover:border-[#333] transition-all" target="_blank">💬 Contactar por WhatsApp</a>
+                </div>
+                
+                <div class="flex flex-wrap items-center gap-16">
+                    <div class="flex flex-col gap-2">
+                        <span class="text-3xl font-bold text-white">10+</span>
+                        <span class="text-sm text-text-gray uppercase tracking-wider">Años de Experiencia</span>
+                    </div>
+                    <div class="w-px h-12 bg-card-border hidden md:block"></div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-3xl font-bold text-white">150+</span>
+                        <span class="text-sm text-text-gray uppercase tracking-wider">Proyectos Entregados</span>
+                    </div>
+                    <div class="w-px h-12 bg-card-border hidden md:block"></div>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-3xl font-bold text-white">50+</span>
+                        <span class="text-sm text-text-gray uppercase tracking-wider">Clientes Satisfechos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-first md:order-last flex justify-center">
+                <div class="relative w-full max-w-[450px]">
+                    <img src="/anderson.jpg" alt="Anderson Rivas - Desarrollador WordPress Experto" class="w-full h-auto rounded-3xl border-2 border-card-border shadow-2xl" />
+                    <div class="absolute -bottom-4 -right-4 bg-acc-green text-bg-black px-5 py-3 rounded-full font-bold text-sm flex items-center gap-2 shadow-[0_10px_30px_rgba(57,255,20,0.3)]">
+                        <span class="w-5 h-5 bg-bg-black text-acc-green rounded-full flex items-center justify-center text-xs">✓</span>
+                        Verificado
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-30 px-6">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-center mb-16">
+                <div class="text-acc-green text-sm font-bold tracking-[0.15em] uppercase mb-4">Servicios</div>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Soluciones WordPress<br><span class="text-acc-green">a tu medida</span></h2>
+                <p class="text-text-gray text-lg max-w-2xl mx-auto">Desarrollo web profesional con tecnologías modernas y código limpio</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-card-bg border border-card-border p-10 rounded-2xl hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(57,255,20,0.1)] transition-all duration-300">
+                    <div class="w-16 h-16 bg-acc-green-dim rounded-2xl flex items-center justify-center mb-6 text-acc-green">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Figma → WordPress</h3>
+                    <p class="text-text-gray mb-5 leading-relaxed">Convierto tus diseños de Figma en temas WordPress pixel-perfect. Código limpio, responsive y optimizado para velocidad.</p>
+                    <ul class="space-y-2">
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Fidelidad al diseño 100%</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Responsive mobile-first</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Animaciones y transiciones</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-card-bg border border-card-border p-10 rounded-2xl hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(57,255,20,0.1)] transition-all duration-300">
+                    <div class="w-16 h-16 bg-acc-green-dim rounded-2xl flex items-center justify-center mb-6 text-acc-green">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Temas a Medida con ACF</h3>
+                    <p class="text-text-gray mb-5 leading-relaxed">Desarrollo temas personalizados con Advanced Custom Fields. Panels administrativos intuitivos para que gestiones tu contenido fácilmente.</p>
+                    <ul class="space-y-2">
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Custom Post Types</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Fields dinámicos</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Options Pages</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-card-bg border border-card-border p-10 rounded-2xl hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(57,255,20,0.1)] transition-all duration-300">
+                    <div class="w-16 h-16 bg-acc-green-dim rounded-2xl flex items-center justify-center mb-6 text-acc-green">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Tiendas WooCommerce</h3>
+                    <p class="text-text-gray mb-5 leading-relaxed">E-commerce profesional con WordPress y WooCommerce. Pasarelas de pago, envíos, inventario y todo lo que necesitas para vender online.</p>
+                    <ul class="space-y-2">
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Pasarelas de pago</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Gestión de inventario</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Checkout optimizado</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-card-bg border border-card-border p-10 rounded-2xl hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(57,255,20,0.1)] transition-all duration-300">
+                    <div class="w-16 h-16 bg-acc-green-dim rounded-2xl flex items-center justify-center mb-6 text-acc-green">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Blogs Profesionales</h3>
+                    <p class="text-text-gray mb-5 leading-relaxed">Blogs optimizados para SEO y velocidad. Diseño atractivo, navegación intuitiva y experiencia de usuario excepcional para tus lectores.</p>
+                    <ul class="space-y-2">
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ SEO optimizado</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Velocidad de carga</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Diseño moderno</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-card-bg border border-card-border p-10 rounded-2xl hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(57,255,20,0.1)] transition-all duration-300">
+                    <div class="w-16 h-16 bg-acc-green-dim rounded-2xl flex items-center justify-center mb-6 text-acc-green">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Academias Online con TutorLMS</h3>
+                    <p class="text-text-gray mb-5 leading-relaxed">Plataformas educativas completas con TutorLMS. Cursos, lecciones, quizzes, certificados y sistema de membresías.</p>
+                    <ul class="space-y-2">
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Cursos y lecciones</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Sistema de quizzes</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Certificados automáticos</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-card-bg border border-card-border p-10 rounded-2xl hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(57,255,20,0.1)] transition-all duration-300">
+                    <div class="w-16 h-16 bg-acc-green-dim rounded-2xl flex items-center justify-center mb-6 text-acc-green">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Optimización y Soporte</h3>
+                    <p class="text-text-gray mb-5 leading-relaxed">Mejora de velocidad, seguridad y rendimiento. Mantenimiento continuo, backups automáticos y soporte técnico especializado.</p>
+                    <ul class="space-y-2">
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Core Web Vitals</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Backups diarios</li>
+                        <li class="text-text-gray text-sm flex items-center gap-2">✓ Soporte 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-30 px-6">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-center mb-12">
+                <div class="text-acc-green text-sm font-bold tracking-[0.15em] uppercase mb-4">Portfolio</div>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Proyectos <span class="text-acc-green">Destacados</span></h2>
+                <p class="text-text-gray text-lg max-w-2xl mx-auto">Algunos de mis trabajos recientes organizados por categoría</p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="filter-btn active bg-acc-green text-bg-black border border-acc-green px-6 py-3 rounded-full font-medium" data-filter="all">Todos</button>
+                <button class="filter-btn bg-transparent border border-card-border text-text-gray px-6 py-3 rounded-full font-medium hover:border-acc-green hover:text-acc-green transition-all" data-filter="corporativo">Web Corporativas</button>
+                <button class="filter-btn bg-transparent border border-card-border text-text-gray px-6 py-3 rounded-full font-medium hover:border-acc-green hover:text-acc-green transition-all" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn bg-transparent border border-card-border text-text-gray px-6 py-3 rounded-full font-medium hover:border-acc-green hover:text-acc-green transition-all" data-filter="blog">Blogs</button>
+                <button class="filter-btn bg-transparent border border-card-border text-text-gray px-6 py-3 rounded-full font-medium hover:border-acc-green hover:text-acc-green transition-all" data-filter="academia">Academias</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="portfolio-grid">
+                <!-- Web Corporativas -->
+                <div class="portfolio-item" data-category="corporativo">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">🏢</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Empresa Tecnológica</h4>
+                                <p class="text-text-gray text-sm">Sitio corporativo con Elementor Pro</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">Web Corporativa</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Tech Solutions Inc</h3>
+                            <p class="text-text-gray text-sm">Diseño moderno con animaciones avanzadas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="corporativo">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">🏭</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Consultora de Negocios</h4>
+                                <p class="text-text-gray text-sm">Tema personalizado con ACF</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">Web Corporativa</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Business Pro Consulting</h3>
+                            <p class="text-text-gray text-sm">Panel administrativo personalizado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">🛍️</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Tienda de Moda</h4>
+                                <p class="text-text-gray text-sm">WooCommerce con Bricks Builder</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">E-commerce</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Fashion Store Online</h3>
+                            <p class="text-text-gray text-sm">Checkout optimizado y pagos seguros</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">🥘</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Productos Gourmet</h4>
+                                <p class="text-text-gray text-sm">WooCommerce con Elementor</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">E-commerce</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Gourmet Delights</h3>
+                            <p class="text-text-gray text-sm">Filtros avanzados y catálogo dinámico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blogs -->
+                <div class="portfolio-item" data-category="blog">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">✍️</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Blog de Viajes</h4>
+                                <p class="text-text-gray text-sm">Gutenberg + Custom Theme</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">Blog</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Wanderlust Adventures</h3>
+                            <p class="text-text-gray text-sm">SEO optimizado y velocidad excepcional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="blog">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">💻</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Blog Tecnológico</h4>
+                                <p class="text-text-gray text-sm">Bricks Builder + Custom CSS</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">Blog</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Tech Insights Daily</h3>
+                            <p class="text-text-gray text-sm">Diseño moderno y navegación intuitiva</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academias -->
+                <div class="portfolio-item" data-category="academia">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">🎓</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Academia de Marketing</h4>
+                                <p class="text-text-gray text-sm">TutorLMS + WooCommerce</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">Academia</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Marketing Masters Academy</h3>
+                            <p class="text-text-gray text-sm">Plataforma completa con certificados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="academia">
+                    <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group">
+                        <div class="relative aspect-[16/10] overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">🎨</div>
+                            <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+                                <h4 class="text-acc-green text-lg">Academia de Diseño</h4>
+                                <p class="text-text-gray text-sm">TutorLMS + MemberPress</p>
+                                <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3">Academia</span>
+                            <h3 class="text-lg font-bold mb-2 text-white">Design School Online</h3>
+                            <p class="text-text-gray text-sm">Sistema de membresías y cursos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="py-30 px-6">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-center mb-16">
+                <div class="text-acc-green text-sm font-bold tracking-[0.15em] uppercase mb-4">Tecnologías</div>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Herramientas que <span class="text-acc-green">domino</span></h2>
+                <p class="text-text-gray text-lg max-w-2xl mx-auto">Stack tecnológico moderno para proyectos de alta calidad</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 2.4c5.3 0 9.6 4.3 9.6 9.6s-4.3 9.6-9.6 9.6S2.4 17.3 2.4 12 6.7 2.4 12 2.4zm-1.2 3.6v7.2l6-3.6-6-3.6z"/></svg>
+                    <span>WordPress</span>
+                </div>
+                
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M12 0L1.605 6v12L12 24l10.395-6V6L12 0zm0 2.4l7.8 4.5-2.95 1.7L12 5.85l-4.85 2.75-2.95-1.7L12 2.4zM3.9 7.8l8.1 4.65v9.3l-8.1-4.65V7.8zm16.2 0v9.3l-8.1 4.65v-9.3l8.1-4.65z"/></svg>
+                    <span>Elementor Pro</span>
+                </div>
+                
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    <span>Bricks Builder</span>
+                </div>
+                
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6z"/></svg>
+                    <span>WooCommerce</span>
+                </div>
+                
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5"/></svg>
+                    <span>TutorLMS</span>
+                </div>
+                
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2z"/></svg>
+                    <span>ACF Pro</span>
+                </div>
+                
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                    <span>Figma</span>
+                </div>
+                
+                <div class="bg-card-bg border border-card-border p-8 rounded-2xl flex flex-col items-center gap-4 text-white font-semibold hover:border-acc-green hover:bg-acc-green-dim hover:-translate-y-1 transition-all duration-300">
+                    <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" class="text-acc-green"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="proceso" class="py-30 px-6">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-center mb-16">
+                <div class="text-acc-green text-sm font-bold tracking-[0.15em] uppercase mb-4">Proceso</div>
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Cómo <span class="text-acc-green">trabajo</span></h2>
+                <p class="text-text-gray text-lg max-w-2xl mx-auto">Un proceso probado para entregar proyectos exitosos</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center items-start gap-6">
+                <div class="flex-1 min-w-[200px] max-w-[260px] text-center p-10 bg-card-bg border border-card-border rounded-[20px] relative hover:border-acc-green hover:-translate-y-1 transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-acc-green text-bg-black w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-sm">01</div>
+                    <div class="text-4xl my-5">💬</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Descubrimiento</h3>
+                    <p class="text-text-gray leading-relaxed">Conversamos sobre tus necesidades, objetivos y visión. Analizo tu mercado y competencia para proponer la mejor solución.</p>
+                </div>
+                
+                <div class="text-3xl text-acc-green self-center opacity-50 hidden lg:block">→</div>
+                
+                <div class="flex-1 min-w-[200px] max-w-[260px] text-center p-10 bg-card-bg border border-card-border rounded-[20px] relative hover:border-acc-green hover:-translate-y-1 transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-acc-green text-bg-black w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-sm">02</div>
+                    <div class="text-4xl my-5">🎨</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Diseño</h3>
+                    <p class="text-text-gray leading-relaxed">Si tienes diseño en Figma, lo reviso. Si no, te presento propuestas. Definimos la estructura, contenido y experiencia de usuario.</p>
+                </div>
+                
+                <div class="text-3xl text-acc-green self-center opacity-50 hidden lg:block">→</div>
+                
+                <div class="flex-1 min-w-[200px] max-w-[260px] text-center p-10 bg-card-bg border border-card-border rounded-[20px] relative hover:border-acc-green hover:-translate-y-1 transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-acc-green text-bg-black w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-sm">03</div>
+                    <div class="text-4xl my-5">💻</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Desarrollo</h3>
+                    <p class="text-text-gray leading-relaxed">Codifico tu sitio con las mejores prácticas. Código limpio, optimizado, responsive y enfocado en velocidad y SEO.</p>
+                </div>
+                
+                <div class="text-3xl text-acc-green self-center opacity-50 hidden lg:block">→</div>
+                
+                <div class="flex-1 min-w-[200px] max-w-[260px] text-center p-10 bg-card-bg border border-card-border rounded-[20px] relative hover:border-acc-green hover:-translate-y-1 transition-all">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-acc-green text-bg-black w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-sm">04</div>
+                    <div class="text-4xl my-5">🚀</div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Entrega</h3>
+                    <p class="text-text-gray leading-relaxed">Pruebas exhaustivas, capacitación para que administres tu sitio, y soporte continuo post-lanzamiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="py-30 px-6">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="bg-gradient-to-b from-[#0A0A0A] to-black border border-acc-green rounded-3xl p-20 text-center shadow-[0_0_50px_rgba(57,255,20,0.05)]">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">¿Listo para llevar tu proyecto al siguiente nivel?</h2>
+                <p class="text-text-gray text-xl max-w-2xl mx-auto mb-12">Hablemos sobre tu proyecto. Te ayudo a convertir tus ideas en un sitio web profesional, rápido y escalable.</p>
+                
+                <div class="flex flex-wrap justify-center gap-5 mb-10">
+                    <a href="https://wa.me/1234567890" class="bg-acc-green text-bg-black px-8 py-4 rounded-xl font-bold text-lg shadow-[0_8px_32px_rgba(57,255,20,0.15)] hover:opacity-90 transition-opacity" target="_blank">💬 Contactar por WhatsApp</a>
+                    <a href="mailto:contacto@andersonrivas.dev" class="bg-transparent text-white border border-card-border px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0f0f0f] hover:border-[#333] transition-all">✉️ Enviar Email</a>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-8 text-text-gray text-sm">
+                    <span>✓ Respuesta en 24h</span>
+                    <span>✓ Presupuesto sin compromiso</span>
+                    <span>✓ Soporte post-entrega</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-24 pb-10 border-t border-card-border mt-36 bg-[#050505]">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 font-bold text-xl mb-6">
+                        <span class="text-acc-green">👨‍💻</span>
+                        <span>Anderson Rivas</span>
+                    </div>
+                    <p class="text-text-gray mb-6 leading-relaxed">Ingeniero en Informática con 10+ años de experiencia creando soluciones web profesionales con WordPress.</p>
+                    <div class="flex gap-5">
+                        <a href="https://linkedin.com/in/andersonrivas" class="w-10 h-10 bg-[#111] flex items-center justify-center rounded-lg border border-card-border hover:border-acc-green hover:text-acc-green transition-all" target="_blank" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://github.com/andersonrivas" class="w-10 h-10 bg-[#111] flex items-center justify-center rounded-lg border border-card-border hover:border-acc-green hover:text-acc-green transition-all" target="_blank" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://wa.me/1234567890" class="w-10 h-10 bg-[#111] flex items-center justify-center rounded-lg border border-card-border hover:border-acc-green hover:text-acc-green transition-all" target="_blank" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-base font-bold mb-7 text-white">Servicios</h4>
+                    <a href="#servicios" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors">Figma a WordPress</a>
+                    <a href="#servicios" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors">Temas con ACF</a>
+                    <a href="#servicios" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors">WooCommerce</a>
+                    <a href="#servicios" class="block text-text-gray text-[0.95rem] hover:text-acc-green transition-colors">TutorLMS</a>
+                </div>
+                
+                <div>
+                    <h4 class="text-base font-bold mb-7 text-white">Recursos</h4>
+                    <a href="#portfolio" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors">Portfolio</a>
+                    <a href="#proceso" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors">Proceso de Trabajo</a>
+                    <a href="#" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors">Blog</a>
+                    <a href="#" class="block text-text-gray text-[0.95rem] hover:text-acc-green transition-colors">FAQ</a>
+                </div>
+                
+                <div>
+                    <h4 class="text-base font-bold mb-7 text-white">Contacto</h4>
+                    <a href="mailto:contacto@andersonrivas.dev" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors">contacto@andersonrivas.dev</a>
+                    <a href="https://wa.me/1234567890" class="block text-text-gray text-[0.95rem] mb-3.5 hover:text-acc-green transition-colors" target="_blank">WhatsApp</a>
+                    <a href="#" class="block text-text-gray text-[0.95rem] hover:text-acc-green transition-colors">Calendly</a>
+                </div>
+            </div>
+            
+            <div class="pt-10 border-t border-[#111] flex flex-col md:flex-row justify-between items-center gap-6 text-text-gray text-sm">
+                <p>© 2024 Anderson Rivas. Todos los derechos reservados.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+                    <a href="#" class="hover:text-white transition-colors">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</Layout>
