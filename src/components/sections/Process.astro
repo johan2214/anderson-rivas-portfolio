@@ -1,0 +1,58 @@
+---
+const steps = [
+  {
+    number: '01',
+    icon: '💬',
+    title: 'Descubrimiento',
+    description: 'Conversamos sobre tus necesidades, objetivos y visión. Analizo tu mercado y competencia para proponer la mejor solución.'
+  },
+  {
+    number: '02',
+    icon: '🎨',
+    title: 'Diseño',
+    description: 'Si tienes diseño en Figma, lo reviso. Si no, te presento propuestas. Definimos la estructura, contenido y experiencia de usuario.'
+  },
+  {
+    number: '03',
+    icon: '💻',
+    title: 'Desarrollo',
+    description: 'Codifico tu sitio con las mejores prácticas. Código limpio, optimizado, responsive y enfocado en velocidad y SEO.'
+  },
+  {
+    number: '04',
+    icon: '🚀',
+    title: 'Entrega',
+    description: 'Pruebas exhaustivas, capacitación para que administres tu sitio, y soporte continuo post-lanzamiento.'
+  }
+];
+---
+
+<section id="proceso" class="py-30 px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-16">
+      <div class="text-acc-green text-sm font-bold tracking-[0.15em] uppercase mb-4">Proceso</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+        Cómo <span class="text-acc-green">trabajo</span>
+      </h2>
+      <p class="text-text-gray text-lg max-w-2xl mx-auto">
+        Un proceso probado para entregar proyectos exitosos
+      </p>
+    </div>
+    
+    <div class="flex flex-wrap justify-center items-start gap-6">
+      {steps.map((step, index) => (
+        <>
+          <div class="flex-1 min-w-[200px] max-w-[260px] text-center p-10 bg-card-bg border border-card-border rounded-[20px] relative hover:border-acc-green hover:-translate-y-1 transition-all">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-acc-green text-bg-black w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-sm">
+              {step.number}
+            </div>
+            <div class="text-4xl my-5">{step.icon}</div>
+            <h3 class="text-xl font-bold mb-4 text-white">{step.title}</h3>
+            <p class="text-text-gray leading-relaxed">{step.description}</p>
+          </div>
+          {index < steps.length - 1 && <div class="text-3xl text-acc-green self-center opacity-50 hidden lg:block">→</div>}
+        </>
+      ))}
+    </div>
+  </div>
+</section>

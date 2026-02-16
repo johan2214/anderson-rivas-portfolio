@@ -1,0 +1,68 @@
+---
+export interface Props {
+  name: string;
+  role: string;
+  experience: string;
+  image: string;
+  stats: Array<{
+    value: string;
+    label: string;
+  }>;
+}
+
+const { name, role, experience, image, stats } = Astro.props;
+---
+
+<section id="inicio" class="pt-40 pb-24 px-6">
+  <div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-20 items-center">
+    <div class="text-left">
+      <div class="inline-flex items-center gap-2 bg-acc-green-dim text-acc-green px-4 py-2 rounded-full text-sm font-semibold mb-8 border border-acc-green/20">
+        <span class="w-2 h-2 bg-acc-green rounded-full shadow-[0_0_10px_#39FF14]"></span>
+        Disponible para proyectos
+      </div>
+      
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-8">
+        {name}<br>
+        <span class="text-acc-green drop-shadow-[0_0_20px_rgba(57,255,20,0.3)]">{role}</span><br>
+        Experto
+      </h1>
+      
+      <p class="text-text-gray text-xl max-w-2xl mb-12 leading-relaxed" set:html={experience} />
+      
+      <div class="flex flex-wrap gap-5 mb-14">
+        <a href="#portfolio" class="bg-acc-green text-bg-black px-8 py-4 rounded-xl font-bold text-lg shadow-[0_8px_32px_rgba(57,255,20,0.15)] hover:opacity-90 transition-opacity">
+          Ver Portfolio →
+        </a>
+        <a href="https://wa.me/04247501213" class="bg-transparent text-white border border-card-border px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0f0f0f] hover:border-[#333] transition-all" target="_blank">
+          💬 Contactar por WhatsApp
+        </a>
+      </div>
+      
+      <div class="flex flex-wrap items-center gap-16">
+        {stats.map((stat, index) => (
+          <>
+            <div class="flex flex-col gap-2">
+              <span class="text-3xl font-bold text-white">{stat.value}</span>
+              <span class="text-sm text-text-gray uppercase tracking-wider">{stat.label}</span>
+            </div>
+            {index < stats.length - 1 && <div class="w-px h-12 bg-card-border hidden md:block" />}
+          </>
+        ))}
+      </div>
+    </div>
+    
+    <div class="order-first md:order-last flex justify-center">
+      <div class="relative w-full max-w-[450px]">
+        <img 
+          src={image} 
+          alt={`${name} - ${role} Experto`}
+          class="w-full h-auto rounded-3xl border-2 border-card-border shadow-2xl"
+        />
+        <div class="absolute -bottom-4 -right-4 bg-acc-green text-bg-black px-5 py-3 rounded-full font-bold text-sm flex items-center gap-2 shadow-[0_10px_30px_rgba(57,255,20,0.3)]">
+          <span class="w-5 h-5 bg-bg-black text-acc-green rounded-full flex items-center justify-center text-xs">✓</span>
+          Verificado
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

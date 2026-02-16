@@ -1,0 +1,75 @@
+---
+import ServiceCard from '../ui/ServiceCard.astro';
+
+const services = [
+  {
+    title: 'Figma → WordPress',
+    description: 'Convierto tus diseños de Figma en temas WordPress pixel-perfect. Código limpio, responsive y optimizado para velocidad.',
+    features: ['Fidelidad al diseño 100%', 'Responsive mobile-first', 'Animaciones y transiciones'],
+    icon: 'figma'
+  },
+  {
+    title: 'Temas a Medida con ACF',
+    description: 'Desarrollo temas personalizados con Advanced Custom Fields. Panels administrativos intuitivos para que gestiones tu contenido fácilmente.',
+    features: ['Custom Post Types', 'Fields dinámicos', 'Options Pages'],
+    icon: 'file'
+  },
+  {
+    title: 'Tiendas WooCommerce',
+    description: 'E-commerce profesional con WordPress y WooCommerce. Pasarelas de pago, envíos, inventario y todo lo que necesitas para vender online.',
+    features: ['Pasarelas de pago', 'Gestión de inventario', 'Checkout optimizado'],
+    icon: 'cart'
+  },
+  {
+    title: 'Blogs Profesionales',
+    description: 'Blogs optimizados para SEO y velocidad. Diseño atractivo, navegación intuitiva y experiencia de usuario excepcional para tus lectores.',
+    features: ['SEO optimizado', 'Velocidad de carga', 'Diseño moderno'],
+    icon: 'book'
+  },
+  {
+    title: 'Academias Online con TutorLMS',
+    description: 'Plataformas educativas completas con TutorLMS. Cursos, lecciones, quizzes, certificados y sistema de membresías.',
+    features: ['Cursos y lecciones', 'Sistema de quizzes', 'Certificados automáticos'],
+    icon: 'academy'
+  },
+  {
+    title: 'Optimización y Soporte',
+    description: 'Mejora de velocidad, seguridad y rendimiento. Mantenimiento continuo, backups automáticos y soporte técnico especializado.',
+    features: ['Core Web Vitals', 'Backups diarios', 'Soporte 24/7'],
+    icon: 'support'
+  }
+];
+---
+
+<section id="servicios" class="py-30 px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-16">
+      <div class="text-acc-green text-sm font-bold tracking-[0.15em] uppercase mb-4">Servicios</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+        Soluciones WordPress<br><span class="text-acc-green">a tu medida</span>
+      </h2>
+      <p class="text-text-gray text-lg max-w-2xl mx-auto">
+        Desarrollo web profesional con tecnologías modernas y código limpio
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {services.map(service => (
+        <ServiceCard 
+          title={service.title}
+          description={service.description}
+          features={service.features}
+        >
+          <svg slot="icon" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            {service.icon === 'figma' && <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>}
+            {service.icon === 'file' && <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>}
+            {service.icon === 'cart' && <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>}
+            {service.icon === 'book' && <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>}
+            {service.icon === 'academy' && <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>}
+            {service.icon === 'support' && <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>}
+          </svg>
+        </ServiceCard>
+      ))}
+    </div>
+  </div>
+</section>

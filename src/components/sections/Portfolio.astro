@@ -1,0 +1,119 @@
+---
+import PortfolioCard from '../ui/PortfolioCard.astro';
+
+const projects = [
+  {
+    category: 'corporativo',
+    title: 'Tech Solutions Inc',
+    description: 'Diseño moderno con animaciones avanzadas',
+    emoji: '🏢',
+    tag: 'Web Corporativa',
+    overlayTitle: 'Empresa Tecnológica',
+    overlayDescription: 'Sitio corporativo con Elementor Pro'
+  },
+  {
+    category: 'corporativo',
+    title: 'Business Pro Consulting',
+    description: 'Panel administrativo personalizado',
+    emoji: '🏭',
+    tag: 'Web Corporativa',
+    overlayTitle: 'Consultora de Negocios',
+    overlayDescription: 'Tema personalizado con ACF'
+  },
+  {
+    category: 'ecommerce',
+    title: 'Fashion Store Online',
+    description: 'Checkout optimizado y pagos seguros',
+    emoji: '🛍️',
+    tag: 'E-commerce',
+    overlayTitle: 'Tienda de Moda',
+    overlayDescription: 'WooCommerce con Bricks Builder'
+  },
+  {
+    category: 'ecommerce',
+    title: 'Gourmet Delights',
+    description: 'Filtros avanzados y catálogo dinámico',
+    emoji: '🥘',
+    tag: 'E-commerce',
+    overlayTitle: 'Productos Gourmet',
+    overlayDescription: 'WooCommerce con Elementor'
+  },
+  {
+    category: 'blog',
+    title: 'Wanderlust Adventures',
+    description: 'SEO optimizado y velocidad excepcional',
+    emoji: '✍️',
+    tag: 'Blog',
+    overlayTitle: 'Blog de Viajes',
+    overlayDescription: 'Gutenberg + Custom Theme'
+  },
+  {
+    category: 'blog',
+    title: 'Tech Insights Daily',
+    description: 'Diseño moderno y navegación intuitiva',
+    emoji: '💻',
+    tag: 'Blog',
+    overlayTitle: 'Blog Tecnológico',
+    overlayDescription: 'Bricks Builder + Custom CSS'
+  },
+  {
+    category: 'academia',
+    title: 'Marketing Masters Academy',
+    description: 'Plataforma completa con certificados',
+    emoji: '🎓',
+    tag: 'Academia',
+    overlayTitle: 'Academia de Marketing',
+    overlayDescription: 'TutorLMS + WooCommerce'
+  },
+  {
+    category: 'academia',
+    title: 'Design School Online',
+    description: 'Sistema de membresías y cursos',
+    emoji: '🎨',
+    tag: 'Academia',
+    overlayTitle: 'Academia de Diseño',
+    overlayDescription: 'TutorLMS + MemberPress'
+  }
+];
+
+const filters = [
+  { label: 'Todos', value: 'all' },
+  { label: 'Web Corporativas', value: 'corporativo' },
+  { label: 'E-commerce', value: 'ecommerce' },
+  { label: 'Blogs', value: 'blog' },
+  { label: 'Academias', value: 'academia' }
+];
+---
+
+<section id="portfolio" class="py-30 px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-acc-green text-sm font-bold tracking-[0.15em] uppercase mb-4">Portfolio</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+        Proyectos <span class="text-acc-green">Destacados</span>
+      </h2>
+      <p class="text-text-gray text-lg max-w-2xl mx-auto">
+        Algunos de mis trabajos recientes organizados por categoría
+      </p>
+    </div>
+    
+    <!-- Filters -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      {filters.map((filter, index) => (
+        <button 
+          class={`filter-btn px-6 py-3 rounded-full font-medium transition-all ${index === 0 ? 'bg-acc-green text-bg-black border border-acc-green active' : 'bg-transparent border border-card-border text-text-gray hover:border-acc-green hover:text-acc-green'}`}
+          data-filter={filter.value}
+        >
+          {filter.label}
+        </button>
+      ))}
+    </div>
+    
+    <!-- Portfolio Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="portfolio-grid">
+      {projects.map(project => (
+        <PortfolioCard {...project} />
+      ))}
+    </div>
+  </div>
+</section>

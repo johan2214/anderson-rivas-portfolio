@@ -1,0 +1,35 @@
+---
+export interface Props {
+  category: string;
+  title: string;
+  description: string;
+  emoji: string;
+  tag: string;
+  overlayTitle: string;
+  overlayDescription: string;
+}
+
+const { category, title, description, emoji, tag, overlayTitle, overlayDescription } = Astro.props;
+---
+
+<div class="portfolio-item" data-category={category}>
+  <div class="bg-card-bg border border-card-border rounded-2xl overflow-hidden hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 group h-full flex flex-col">
+    <div class="relative aspect-[16/10] overflow-hidden">
+      <div class="w-full h-full bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] flex items-center justify-center text-6xl">
+        {emoji}
+      </div>
+      <div class="absolute inset-0 bg-black/85 backdrop-blur flex flex-col items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity p-5 text-center">
+        <h4 class="text-acc-green text-lg">{overlayTitle}</h4>
+        <p class="text-text-gray text-sm">{overlayDescription}</p>
+        <a href="#" class="text-acc-green font-semibold underline underline-offset-4 mt-2">Ver proyecto →</a>
+      </div>
+    </div>
+    <div class="p-6 flex-grow flex flex-col">
+      <span class="inline-block bg-acc-green-dim text-acc-green px-3 py-1 rounded-full text-xs font-semibold mb-3 w-fit">
+        {tag}
+      </span>
+      <h3 class="text-lg font-bold mb-2 text-white">{title}</h3>
+      <p class="text-text-gray text-sm">{description}</p>
+    </div>
+  </div>
+</div>
