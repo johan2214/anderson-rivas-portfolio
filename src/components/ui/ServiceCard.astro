@@ -1,12 +1,11 @@
 ---
 export interface Props {
-  icon: string;
   title: string;
   description: string;
   features: string[];
 }
 
-const { icon, title, description, features } = Astro.props;
+const { title, description, features } = Astro.props;
 ---
 
 <div class="bg-card-bg border border-card-border p-10 rounded-2xl hover:border-acc-green hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(57,255,20,0.1)] transition-all duration-300 h-full flex flex-col">
